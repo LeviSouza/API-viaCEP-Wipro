@@ -1,10 +1,11 @@
 package wipro.latam.consultacep.util;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class TabelaFrete {
 
-
-    public static String obterFreteRegiao(String regiao) {
+    public String obterFreteRegiao(String regiao) {
         switch (regiao.toUpperCase()) {
             case "AC":
             case "AM":
