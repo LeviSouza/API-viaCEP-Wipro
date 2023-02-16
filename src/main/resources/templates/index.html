@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de busca de CEP</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+<h1>Busca de CEP</h1>
+<form th:action="@{/v1/consulta-endereco}" method="get">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" value="" />
+    <button type="submit">Buscar</button>
+</form>
+
+<!--<div th:if="${endereco != null}">-->
+<!--    <h2>Endereço:</h2>-->
+<!--    <p th:text="${endereco.logradouro}" />-->
+<!--    <p th:text="${endereco.bairro}" />-->
+<!--    <p th:text="${endereco.localidade}" />-->
+<!--    <p th:text="${endereco.uf}" />-->
+<!--</div>-->
+</body>
+</html>

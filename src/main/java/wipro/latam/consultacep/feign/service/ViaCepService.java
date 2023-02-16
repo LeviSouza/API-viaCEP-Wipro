@@ -12,7 +12,7 @@ public class ViaCepService {
 
     private final ViaCepInterface viacep;
 
-    public DadosEndereco consulta(Cep cep){
-        return viacep.buscarcep(cep.getCep());
+    public DadosEndereco consulta(String cep){
+        return viacep.buscarcep(cep);
     }
 }
