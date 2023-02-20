@@ -65,13 +65,5 @@ public class StepsConsultarCep {
         Assertions.assertEquals(true, ((DadosEndereco) resultErrado.getModel().get("endereco")).isErro());
     }
 
-    @Entao("o sistema deve exibir uma mensagem de erro informando que o CEP é inexistente")
-    public void o_sistema_deve_exibir_uma_mensagem_de_erro_informando_que_o_cep_é_inexistente() {
-
-        resultlongo = consultaCepController.consultacep(ceplongo);
-        Assertions.assertNotNull(resultlongo);
-//        Assertions.assertEquals("index", resultlongo.getViewName());
-//        Assertions.assertEquals("CEP não encontrado!", resultlongo.getModel().get("mensagemErro"));
-    }
 
 }

@@ -44,7 +44,7 @@ public class ConsultaCepControllerV1Test {
     }
 
     @Test
-    void testConsultaCep() throws Exception {
+    void testarConsultaDeCep() throws Exception {
 
         //cria uma builder modck da controller
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(controller).build();

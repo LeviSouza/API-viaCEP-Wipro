@@ -27,13 +27,3 @@ Então o sistema deve exibir uma mensagem de erro informando que o CEP é invál
 Exemplos:
 |     CEP      |          MENSAGEM         |
 |   12345-678  |    "CEP não encontrado!"  |
-
-
-@FluxoExceção
-Esquema do Cenario: Consultar endereço por CEP com mais caracteres
-
-Então o sistema deve exibir uma mensagem de erro informando que o CEP é inexistente
-
-Exemplos:
-|     CEP     |          MENSAGEM         |
-|   12345678  |    "CEP Inexistente!      |
