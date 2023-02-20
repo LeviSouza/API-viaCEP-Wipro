@@ -5,7 +5,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class TabelaFrete {
 
-    public String obterFreteRegiao(String regiao) {
+    //Devolve o frete de acordo com a região
+
+    public double obterFreteRegiao(String regiao) {
+        if (regiao == null) {
+            return 0;
+        }
         switch (regiao.toUpperCase()) {
             case "AC":
             case "AM":
@@ -14,7 +19,7 @@ public class TabelaFrete {
             case "RO":
             case "RR":
             case "TO":
-                return "20.83";
+                return 20.83;
             case "AL":
             case "BA":
             case "CE":
@@ -24,23 +29,23 @@ public class TabelaFrete {
             case "PI":
             case "RN":
             case "SE":
-                return "15.98";
+                return 15.98;
             case "DF":
             case "GO":
             case "MT":
             case "MS":
-                return "12.50";
+                return 12.50;
             case "ES":
             case "MG":
             case "RJ":
             case "SP":
-                return "7.85";
+                return 7.85;
             case "PR":
             case "RS":
             case "SC":
-                return "17.30";
+                return 17.30;
             default:
-                return "Estado inválido";
+                return 0;
         }
     }
 }

@@ -10,6 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 public class ConsultaCepApplication {
 
     public static void main(String[] args) {
+
+        //Método main iniciado pelo Spring Boot
         SpringApplication.run(ConsultaCepApplication.class, args);
     }
 }
